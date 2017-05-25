@@ -52,14 +52,9 @@ without taking care of being in the right folder. You can also run the command f
 docker exec {name-of-my-mapender-container} mapbender-composer [command]
 ```
 
-### Environment variables
-
 ## Enhance the image
 
-You can put a `parameters.yml` into the `/docker-entrypoint-initmapbender.d` folder on the image. On startup this will
-be used as Mapbender configuration. Attention, this will override an existing configuration in the volume!
-
-Additional you can put shell-scripts, with `.sh`-suffix in that folder. They get executed on container startup.
+You can put a `parameters.yml` into the `/srv/www/mapbender/app/config` folder.
 
 You should use the `www-data` user within the container, especially not `root`!
 
