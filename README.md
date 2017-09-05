@@ -4,7 +4,9 @@ Mapbender3 docker image from the [YAGA Development-Team](https://yagajs.org)
 
 ## Supported tags
 
-* `3.0.6.1`, `latest`
+* `3.0.6.3`, `latest`
+* `3.0.6.2`
+* `3.0.6.1`
 * `3.0.6.0`
 
 ## What is Mapbender3
