@@ -1,17 +1,23 @@
-# Mapbender3 for Docker
+# Mapbender for Docker
 
-Mapbender3 docker image from the [YAGA Development-Team](https://yagajs.org)
+[Mapbender](https://github.com/mapbender/mapbender-starter) docker image from the
+[YAGA Development-Team](https://yagajs.org)
 
 ## Supported tags
 
-* `3.0.6.3`, `latest`
+* `3.0.7.7`, `latest`
+* ~~`3.0.7.6`~~
+* `3.0.7.5`
+* `3.0.7.4`
+* `3.0.7.3`
+* `3.0.6.3`
 * `3.0.6.2`
 * `3.0.6.1`
 * `3.0.6.0`
 
-## What is Mapbender3
+## What is Mapbender
 
-[Mapbender3](http://mapbender3.org/) is the back office software and client framework for spatial data infrastructures.
+[Mapbender](http://mapbender3.org/) is the back office software and client framework for spatial data infrastructures.
 
 ## Run container
 
@@ -69,3 +75,7 @@ Before you start to code, we recommend discussing your plans through a
 [GitHub issue](https://github.com/yagajs/docker-mapbender3/issues), especially for more ambitious contributions.
 This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help
 you find out if someone else is working on the same thing.
+
+## License
+
+This project is published under [ISC License](LICENSE).
