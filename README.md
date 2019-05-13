@@ -1,7 +1,6 @@
 # Mapbender for Docker
 
-[Mapbender](https://github.com/mapbender/mapbender-starter) docker image from the
-[YAGA Development-Team](https://yagajs.org)
+Mapbender docker image from the [YAGA Development-Team](https://yagajs.org)
 
 ## Supported tags
 
@@ -18,7 +17,7 @@
 
 ## What is Mapbender
 
-[Mapbender](http://mapbender3.org/) is the back office software and client framework for spatial data infrastructures.
+[Mapbender](https://mapbender.org/) is the back office software and client framework for spatial data infrastructures.
 
 ## Run container
 
