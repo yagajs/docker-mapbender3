@@ -2,7 +2,7 @@ FROM php:7.2-apache
 
 MAINTAINER Arne Schubert <atd.schubert@gmail.com>
 
-ARG MAPBENDER_URL="http://mapbender3.org/builds/3.0.7.7/mapbender3-starter-3.0.7.7.tar.gz"
+ARG MAPBENDER_URL="https://mapbender3.org/builds/3.0.8/mapbender-starter-v3.0.8.tar.gz"
 
 ENV MAPBENDER_URL $MAPBENDER_URL
 
