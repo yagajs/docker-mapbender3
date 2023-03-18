@@ -2,6 +2,8 @@
 
 Mapbender docker image from the [YAGA Development-Team](https://yagajs.org)
 
+Modified by Mia Metzler to support newer releases and add CI build scripts.
+
 ## Supported tags
 
 * `3.0.8`, `latest`
