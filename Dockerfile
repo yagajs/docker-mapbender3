@@ -5,7 +5,6 @@ MAINTAINER Mia Metzler <docker@metzler.systems>
 ARG MAPBENDER_VERSION
 ENV MAPBENDER_URL https://mapbender.org/builds/$MAPBENDER_VERSION/mapbender-starter-v$MAPBENDER_VERSION.tar.gz
 
-ENV MAPBENDER_URL $MAPBENDER_URL
 ENV APACHE_DOCUMENT_ROOT /srv/www/mapbender/web/
 
 RUN set -x \
