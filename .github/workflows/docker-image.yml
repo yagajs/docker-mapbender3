@@ -1,0 +1,25 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+  workflow_dispatch:
+    inputs:
+      mapbender_version:
+        description: 'Mapbender version'
+        required: true
+        default: '3.3.3'
+
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: VERSION='${{ github.event.inputs.flutter_version }}' docker build . --file Dockerfile --tag my-image-name:$(date +%s)
