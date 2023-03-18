@@ -1,10 +1,11 @@
-FROM php:7.2-apache
+FROM php:7.4-apache
 
 MAINTAINER Arne Schubert <atd.schubert@gmail.com>
 
-ARG MAPBENDER_URL="https://mapbender3.org/builds/3.0.8/mapbender-starter-v3.0.8.tar.gz"
+ARG MAPBENDER_URL="https://mapbender.org/builds/mapbender-starter-$VERSION.tar.gz"
 
 ENV MAPBENDER_URL $MAPBENDER_URL
+ENV APACHE_DOCUMENT_ROOT /srv/www/mapbender/web/
 
 RUN set -x \
   && apt-get update \
@@ -21,6 +22,7 @@ RUN set -x \
     libxmp-dev \
     libicu-dev \
     libsqlite3-dev \
+    libonig-dev \
   && rm -rf /var/lib/apt/lists/* \
   && curl -L -o /usr/bin/composer https://getcomposer.org/composer.phar \
   && chmod a+x /usr/bin/composer \
