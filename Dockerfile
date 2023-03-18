@@ -1,8 +1,9 @@
 FROM php:7.4-apache
 
-MAINTAINER Arne Schubert <atd.schubert@gmail.com>
+MAINTAINER Mia Metzler <docker@metzler.systems>
 
-ARG MAPBENDER_URL="https://mapbender.org/builds/mapbender-starter-$VERSION.tar.gz"
+ARG MAPBENDER_VERSION
+ENV MAPBENDER_URL https://mapbender.org/builds/$MAPBENDER_VERSION/mapbender-starter-v$MAPBENDER_VERSION.tar.gz
 
 ENV MAPBENDER_URL $MAPBENDER_URL
 ENV APACHE_DOCUMENT_ROOT /srv/www/mapbender/web/
