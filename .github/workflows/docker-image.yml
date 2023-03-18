@@ -22,4 +22,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --build-arg MAPBENDER_VERSION='${{ github.event.inputs.flutter_version }}' --tag my-image-name:$(date +%s)
+      run: docker build . --file Dockerfile --build-arg MAPBENDER_VERSION='${{ github.event.inputs.mapbender_version }}' --tag my-image-name:$(date +%s)
